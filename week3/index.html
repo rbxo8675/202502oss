@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>HTML forms</h2>
+    <div>사용자 정보 입력</div>
+
+    <form method="post" action="form_ok.html">
+
+        <label for="input_name">이름:</label><br>
+        <input type="text" id="input_name" name="name"><br>
+
+        <label for="input_email">이메일:</label><br>
+        <input type="text" id="input_email" name="email"><br><br>
+        
+        <input type="submit" value="Submit"> <br><br>
+
+        <fieldset>
+            <legend>필드셋의 라벨 같은 기능</legend>
+            <label for="input_phone">전화번호: </label> <input type="text" id="input_phone" name="phone"><br>
+            <label for="input_address">주소: </label> <input type="text" id="input_address" name="address"><br>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="제출" />
+        <input type="reset" value="취소" />
+
+        
+
+
+    </form> 
+</body>
+</html>

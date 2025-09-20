@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert("안녕하세요");
+
+        // let sum = 0;
+        // for(let i = 0; i <= 100; i++){
+        //     sum += i;
+        // }
+        // alert("0 부터 100까지 더하면 .. " + sum + "입니다.");
+        
+        // var aa = 0; // var 는 다시 선언 가능
+        // // 밑에서 선언해도 위에서 사용가능
+        
+        // const cc = 0; // const 는 상수, 재선언 불가, 재할당 불가
+        // let bb = 0; // let 은 재선언 불가, 재할당 가능
+        
+        // console.log("javascript는 java와는 완전히 다른 언어입니다.");
+        // //콘솔에 출력 (브라우저 개발자 도구에서 확인 가능)
+
+        // setTimeout(function() {alert("1초 후에 실행됩니다.")}, 1000);
+        // //1초 후에 실행
+
+        // setInterval(function() {console.log("5초마다 실행됩니다.")}, 5000);
+        // //5초마다 실행
+
+        // clearInterval();
+        // //setInterval()로 설정된 반복 실행을 중지
+
+        // clearInterval();
+        // //setTimeout()으로 설정된 지연 실행을 중지
+
+        // let confirm_result = confirm("정말로 삭제하시겠습니까?");
+        // //확인 또는 취소 버튼이 있는 대화상자 표시
+
+        // let height1 = window.innerHeight
+        // let width1 = window.innerWidth
+        // alert("height: " + height1 + ", width: " + width1);
+
+        // let height2 = window.outerHeight
+        // let width2 = window.outerWidth
+        // alert("height: " + height2 + ", width: " + width2);
+        // //브라우저 창의 내부 및 외부 크기
+
+        // window.location.href = "https://www.naver.com";
+        // //현재 페이지를 지정된 URL로 변경
+
+        // window.replace("https://www.daum.net");
+        // //현재 페이지를 지정된 URL로 변경, 이전 페이지로 돌아갈 수 없음
+
+        let obj = {
+            phone: "010-1234-5678",
+            stdnum: "02512345",
+
+            morningrun : function(){
+                alert("저는 새벽에 달리겠습니다");
+            }
+        };
+        // obj.name = "객체이름이야";
+        obj["name"] = "객체이름이야";
+        alert(obj.name);
+        alert(obj.phone);
+        alert(obj.stdnum);
+        obj.morningrun();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid green;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .relative{
+            position : relative;
+            left: 30px;
+        }
+
+        .fixed{
+            position: fixed;
+            background-color: skyblue;
+            bottom: 0; right: 0; width: 200px;
+        }
+
+        .sticky{
+            position: sticky;
+            top: 0;
+            background-color: mediumslateblue;;
+        }
+    </style>
+</head>
+<body>
+    <div class = "static">div - position: static</div>
+    <div class = "relative">div - position: relative</div>
+    <div class = "sticky">div - position: sticky</div>
+    <div class = "fixed">div - position: fixed</div>
+
+</body>
+</html>

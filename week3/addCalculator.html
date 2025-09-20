@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "header"> 덧셈 계산기</div>
+    <form >
+        <input type = "number" id = "a" /> + <input type = "number" id = "b" /> 
+        <button type="button" onclick="listener()"> = </button> 
+        <input type = "number" id = "sum"/>
+        
+        <br/> <br/>
+
+        <input type = "reset" value = "초기화" />
+    
+    </form>
+
+    <div id = "div_test"
+    onclick="listener_onclick()"
+    onmouseover="listener_onmouseover()"
+    onmouseout="listener_onmouseout()"
+    style = "background-color: aquamarine; height: 200px;"> 안녕하세요   </div>
+
+    <script>
+        function listener(){
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let sum = Number(a) + Number(b);
+            document.getElementById("sum").value = sum;
+
+        }
+
+        function listener_onclick(){
+            alert("클릭됨");
+            let div_test = document.getElementById("div_test");
+            div_test.style = "background-color: yellow; height: 200px;"; // 왜 안되지..
+            div_test.innerHTML = "<img src='./logo.img' alt='로고 이미지' />"; // html 태그도 넣을 수 있음
+
+        function listener_onmouseover(){
+            console.log("마우스 올라감");
+        }
+
+        function listener_onmouseout(){
+            console.log("마우스 나감");
+        }
+
+        let type1 = "abc";
+        alert("type1: " + type1);
+        alert(`type1: ${type1}`); // 백틱(`) 사용, ${} 안에 변수 넣기 가능
+    </script>
+</body>
+</html>

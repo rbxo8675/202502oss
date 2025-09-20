@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/hw1/style2.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/hw1/style2.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/week3/javascript.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/week3/javascript.html"
+        }
+    ]
+}

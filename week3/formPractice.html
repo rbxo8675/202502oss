@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Structure</title>
+</head>
+<body>
+    <div> HTML  Forms </div>
+
+    <div> 사용자 정보 입력  </div>
+
+    <form action = "form_ok.html" method="post">
+        <fieldset style="width: 200px; margin: 2px; border: 1px solid black;">
+            <legend>사용자 이름</legend>
+            <label for  = "input_name">이름: </label> <br>
+            <input type = "text" id = "input_name" name = "user_name" /> <br>
+            <!-- name 속성은 서버로 전송될 때 사용되는 필드의 이름을 정의합니다. -->
+        
+        </fieldset>
+        <fieldset style="width: 200px; margin: 2px; border: 1px solid black;">
+            <legend>사용자 이메일</legend>
+            <label for = "input_email">이메일: </label> <br>
+            <input type = "text" id = "input_email" name = "user_email" /> <br> <br>
+
+        </fieldset>
+        <input type = "submit" value = "Submit" /> <br> <br>
+    
+        지역선택(서울) : 
+        <select name = city>
+            <optgroup label="서울">
+                <option value="gangnam">강남구</option>
+                <option value="gangdong">강동구</option>
+                <option value="gangbuk">강북구</option>
+                <option value="gangseo">강서구</option>
+            </optgroup>
+            <optgroup label="부산">
+                <option value="busan">부산</option>
+            </optgroup>
+            <optgroup label="대구">
+                <option value="daegu">대구</option>
+            </optgroup>
+            <optgroup label="인천">
+                <option value="incheon">인천</option>
+            </optgroup>
+        </select>
+
+        <br> <br>
+        좋아하는 과일은? :
+        <input list = "fruitslist" name="fruits" id  = "fruitsinput" />
+        <datalist id = "fruitslist">
+            <option value="apple">사과</option>
+            <option value="banana">바나나</option>
+            <option value="cherry">체리</option>
+            <option value="grape">포도</option>
+            <option value="orange">오렌지</option>
+        </datalist>
+
+    </form>
+
+    
+    
+</body>
+</html>
